@@ -1,6 +1,7 @@
 import fetchRepositoryData from "./fetchRepositoryData"
 import getAllLanguages from "./utils/getAllLanguages"
 
+// your github username
 const username = "bogdanned"
 
 const repoList = fetchRepositoryData(username)

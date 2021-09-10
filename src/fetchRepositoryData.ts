@@ -4,6 +4,7 @@ import buildRepoUrl from "./utils/buildRepoUrl";
 async function getRepoList(username:string):Promise<Repository[]>{
     const url = buildRepoUrl(username)
     try {
+        // Need to stub this
         const response = await got(url, {
             headers: {
                 "Accept": "application/vnd.github.v3+json",
@@ -15,7 +16,7 @@ async function getRepoList(username:string):Promise<Repository[]>{
 
         return repoList;
     } catch (error) {
-        console.error(error)
+        // console.error(error)
         return []
     }
 
